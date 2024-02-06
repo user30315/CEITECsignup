@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import smtplib
 from lxml import html
 
-sender_email = receiver_email = "test.mail.63287@gmail.com"
+sender_email = receiver_email = os.environ.get("EMAIL_USERNAME")
 sender_password = os.environ.get("EMAIL_PASSWORD")
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
